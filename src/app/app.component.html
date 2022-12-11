@@ -16,6 +16,7 @@
 	      <th scope="col">Date</th>
 	      <th scope="col">Link</th>
 	      <th scope="col">Rating</th>
+	      <th scope="col">Delete</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -26,6 +27,7 @@
 	      <td>{{item.Date}}</td>
 	      <td><a href={{item.Link}} target="_blank">{{item.Link}}</a></td>
 	      <td>{{item.Rating}}</td>
+	      <td><input type="button" onclick={{this.router.url + item.entryNum}} value="Delete"></td>
 	    </tr>
 	  </tbody>
 	</table> 
