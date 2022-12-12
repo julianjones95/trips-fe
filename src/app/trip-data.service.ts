@@ -12,7 +12,7 @@ export class TripDataService {
   getData(){
 	return this.http.get(
 	//	'https://dummyjson.com/products'
-		'https://trips-api-a2fkrtihbq-uc.a.run.app/home'
+		'https://trips-api-service-a2fkrtihbq-uc.a.run.app/home'
 	)
   }
 }
