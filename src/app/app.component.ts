@@ -16,6 +16,9 @@ export class AppComponent implements OnInit {
   tripData$: any;
   constructor( private TripDataService: TripDataService) { }
   tripList:{entryNum:String,Title:String,Price:String, Date:String, Link:String,Rating:String}[] = trips
+  onProductCreate(nums: {entryNum: string}){
+	console.log(nums)
+  }	
 
   ngOnInit(): void {
 	this.tripData$ = this.TripDataService

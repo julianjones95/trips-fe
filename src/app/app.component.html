@@ -27,7 +27,12 @@
 	      <td>{{item.Date}}</td>
 	      <td><a href={{item.Link}} target="_blank">{{item.Link}}</a></td>
 	      <td>{{item.Rating}}</td>
-	      <td><a href="https://trips-fe-a2fkrtihbq-uc.a.run.app/home?entryNum={{item.entryNum}}" ><input type=button value='Delete'></a></td>
+	      <td>
+			<form #deletionForm="ngForm" (ngSubmit)="onProductCreate(deletionForm.value)">
+				<input type="hidden" name="entryNum" value="{{item.entryNum}}">
+				<input type=submit value='Delete'>
+			</form>
+		</td>
 	    </tr>
 	  </tbody>
 	</table> 
