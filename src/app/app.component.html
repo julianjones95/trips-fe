@@ -28,7 +28,7 @@
 	      <td><a href={{item.Link}} target="_blank">{{item.Link}}</a></td>
 	      <td>{{item.Rating}}</td>
 	      <td>
-			<form #deletionForm="ngForm" (ngSubmit)="onProductCreate(deletionForm.value)">
+			<form #deletionForm="ngForm" (ngSubmit)="onSubmit(deletionForm.value)">
 				<input type="hidden" name="entryNum" value="{{item.entryNum}}">
 				<input type=submit value='Delete'>
 			</form>
