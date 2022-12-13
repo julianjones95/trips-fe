@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   tripData$: any;
   constructor( private TripDataService: TripDataService) { }
   tripList:{entryNum:String,Title:String,Price:String, Date:String, Link:String,Rating:String}[] = trips
-  onSubmit(nums: {entryNum: string}){
+  onSubmit(nums: {entryNum: int}){
 	console.log(nums)
   }	
 
