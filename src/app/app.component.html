@@ -29,7 +29,7 @@
 	      <td>{{item.Rating}}</td>
 	      <td>
 			<form #deletionForm="ngForm" (ngSubmit)="onSubmit(deletionForm.value)">
-				<button type=submit value="{{item.Rating}}">Delete</button>
+				<button type=submit name="entryNum"value="{{item.entryNum}}" ngModel>Delete</button>
 			</form>
 		</td>
 	    </tr>
