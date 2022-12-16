@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Trips } from './Trips'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule, HttpClient } from '@angular/common/http'
 import { TripDataService } from './trip-data.service'
 import { tap } from 'rxjs';
 import trips from './sample.json'
@@ -25,6 +25,15 @@ export class AppComponent implements OnInit {
 	.getData()
 	.pipe(tap((data) => (this.tripData = data)));
 
+  }
+
+  onDelete(entryNum: any){
+//	const deleteUrl = 'http://' + this.entryNum
+//	this.httpClient.delete(deleteUrl)
+//	.subscribe(result) => {
+//	    this.ngOnInit()
+//	}
+	console.log("entry num:" + entryNum)
   }
 
 }
