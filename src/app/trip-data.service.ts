@@ -11,8 +11,13 @@ export class TripDataService {
 
   getData(){
 	return this.http.get(
-	//	'https://dummyjson.com/products'
 		'https://trips-api-service-a2fkrtihbq-uc.a.run.app/home'
 	)
   }
+
+ deleteData(url: string){
+	return this.http.delete(url)	
+
+ }
+
 }

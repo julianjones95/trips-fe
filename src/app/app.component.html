@@ -27,11 +27,7 @@
 	      <td>{{item.Date}}</td>
 	      <td><a href={{item.Link}} target="_blank">{{item.Link}}</a></td>
 	      <td>{{item.Rating}}</td>
-	      <td>
-			<form #deletionForm="ngForm" (ngSubmit)="onSubmit(deletionForm.value)">
-				<button name="entryNum"  (click)="onDelete(item.entryNum)">Delete</button>
-			</form>
-		</td>
+	      <td><button (click)="onDelete(item.entryNum)">Delete</button></td>
 	    </tr>
 	  </tbody>
 	</table> 
